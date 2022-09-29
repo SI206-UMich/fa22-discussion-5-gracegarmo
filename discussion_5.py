@@ -78,7 +78,9 @@ class TestAllMethods(unittest.TestCase):
 	## Check to see whether count_a works
 	def test_count_a(self):
 		self.assertEqual(count_a("apples are deliciosa"),3,"count_a(apples are deliciosa)")
-
+		self.assertEqual(count_a("sentence"),0,"count_a(sentence)")
+		self.assertEqual(count_a("aaaa"),4,"count_a(sentence)")
+		self.assertEqual(count_a("this sentence has 2 as"),2,"count_a(sentence)")
 
 	## Check to see whether you can add an item to the warehouse
 	def test_add_item(self):
