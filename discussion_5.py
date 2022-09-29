@@ -105,8 +105,8 @@ class TestAllMethods(unittest.TestCase):
 		warehouse.add_item(self.item2)
 		warehouse.add_item(self.item3)
 		warehouse.add_item(self.item4)
-		print(warehouse.get_max_stock())
-		self.assertEqual(warehouse.get_max_stock(),self.item1,"warehouse.get_max_price()")
+		print(warehouse.get_max_price())
+		self.assertEqual(warehouse.get_max_price(),self.item1,"warehouse.get_max_price()")
 		
 
 def main():
